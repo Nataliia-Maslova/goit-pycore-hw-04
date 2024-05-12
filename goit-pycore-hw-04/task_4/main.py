@@ -24,8 +24,8 @@ def change(args, contacts):
     else:
         add_contact(args, contacts)
 
-def show_phone(args, contacts): # doesn't work
-    name = args
+def show_phone(args, contacts):
+    name, = args
     if name in contacts:
         return contacts[name]
     else:
